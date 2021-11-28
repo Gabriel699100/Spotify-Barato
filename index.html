@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-menu">
+      <div class="search">
+        <input id="search" type="text" />
+      </div>
+      <img class="gucci" src="caratulas/pngwing.com.png">
+    </div>
+    <div class="mainuno">
+      <div class="maindos">
+        <div class="imagenes">
+          <img id="im" src="./caratulas/" />
+        </div>
+        <div class="barrita">
+          <input id="barrita" value="0" type="range" min="0" />
+        </div>
+        <div class="volume">
+          <span class="control mdi mdi-volume-high"></span>
+          <input type="range" name="volume" id="volume-control" min="0" max="1" step="0.01">
+        </div>
+        <div class="datosdelascanciones">
+          <h1 id="tsong">...</h1>
+          <p id="asong">...</p>
+        </div>
+
+        <div class="controlesgenerales">
+          <button id="prev-btn">Anterior</button>
+          <button id="play-btn">Play</button>
+          <button id="next-btn">Siguiente</button>
+        </div>
+      </div>
+      <div class="listasong" id="listasong"></div>
+    </div>
+    <audio id="dp" src="./canciones/Daft Punk-Instant Crush.mp3"></audio>
+    <script src="js/main.js"></script>
+  </body>
+</html>
